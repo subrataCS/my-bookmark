@@ -1,0 +1,71 @@
+.nav {
+  /* border: 2px solid red; */
+  display: flex;
+  /* width: 90%; */
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0 auto;
+  border:0.5px solid gray;
+  border-radius:7px 7px 0px 0px;
+}
+
+.left-box {
+  /* border: 2px solid red; */
+  width: 10%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-box {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.inputbox {
+  display: flex;
+  align-items: center;
+  border: 0.5px solid lime;
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.icon{
+    font-size: 1.3rem;
+}
+
+.right-box input {
+  border: 2px solid red;
+  border: none;
+  all: unset;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  outline: none;
+  box-sizing: border-box;
+}
+.right-box input {
+  all: unset;
+  padding-left: 0.7rem;
+}
+
+.profile{
+    /* border:2px solid red; */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+.profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}

@@ -1,0 +1,91 @@
+.hero {
+  /* width: 80%; */
+  margin: 0 auto;
+  height: 100vh;
+  padding: 0rem 3rem;
+  border: 0.5px solid gray;
+  border-radius:0px 0px 7px  7px;
+}
+
+.form {
+  display: flex;
+  /* border: 2px solid lime; */
+  /* flex-direction: column; */
+  max-width: 100%;
+  padding: 0.5rem 0rem;
+  gap: 1rem;
+  cursor: pointer;
+}
+.form input {
+  display: block;
+  padding: 0.5rem 0rem;
+  border-radius: 5px;
+  all: unset;
+  padding-left: 0.7rem;
+  border: 0.5px solid grey;
+  border-radius: 5px;
+  width: 500px;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  border: 0.5px solid lime;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* cards style 
+*/
+
+.list-container {
+  border: 0.5px solid grey;
+  border-radius: 17px;
+  height: 500px;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap:1rem;
+  justify-content: left;
+  align-items: start;
+
+}
+
+.item {
+  /* border: 2px solid red; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border: 0.5px solid grey;
+  width: 180px;
+  height: 220px;
+  border-radius: 17px;
+  text-align: center;
+  /* padding:0rem 0rem 2rem 0rem; */
+  cursor: pointer;
+
+}
+
+.card-image{
+    height: 60%;
+    overflow: hidden;
+    border-radius: 17px 17px 0px 0px;
+    
+}
+.card-image img{
+    width: 100%;
+    height: auto;
+    
+}
+.card-details{
+    /* background-color: blueviolet; */
+    border-radius: 0px 0px 17px 17px;
+    overflow: none;
+    line-height: 17px;
+}
+.card-details button{
+    cursor: pointer;
+    margin:0.3rem;
+    color:red;
+    border-radius: 5px;
+    border: none;
+    outline: 0.5px solid lime;
+    padding: 0.2rem 0.5rem;
+}

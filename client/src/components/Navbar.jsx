@@ -30,6 +30,8 @@ const Navbar = ({ searchTerm, setSearchTerm }) => {
             GFhAwZfaj9bzKowD8Y&usqp=CAU"
             alt="profile photo"
           />
+          
+
         </div>
       </div>
     </nav>

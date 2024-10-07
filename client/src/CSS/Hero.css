@@ -51,13 +51,14 @@
 }
 
 .item {
-  /* border: 2px solid red; */
+  border: 2px solid red;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   border: 0.5px solid grey;
   width: 180px;
   height: 220px;
   border-radius: 17px;
   text-align: center;
+  padding: 0rem 0.5rem 1.5rem 0rem;
   /* padding:0rem 0rem 2rem 0rem; */
   cursor: pointer;
 
@@ -70,8 +71,9 @@
     
 }
 .card-image img{
-    width: 100%;
-    height: auto;
+    margin-top: 1rem;
+    width: 100px;
+    height: 100px;
     
 }
 .card-details{
@@ -89,3 +91,11 @@
     outline: 0.5px solid lime;
     padding: 0.2rem 0.5rem;
 }
+
+  .img-input{
+  background-color: red;
+  display: block;
+  color:green;
+  margin-top: 7rem;
+
+  }

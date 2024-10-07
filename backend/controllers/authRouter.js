@@ -1,7 +1,7 @@
-import express from 'express';
+import express from 'express'; 
 import { RegisterUser, LoginUser } from '../controllers/Login&Reg.js'; 
 
-const router = express.Router();
+const router = express.Router(); 
 
 // Registration endpoint
 router.post('/register', RegisterUser);

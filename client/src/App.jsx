@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "./components/Hero"; // Ensure the path is correct
+import Hero from "./components/Hero"; 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";

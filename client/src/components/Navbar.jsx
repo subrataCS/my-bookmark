@@ -24,15 +24,9 @@ const Navbar = ({ searchTerm, setSearchTerm }) => {
         </div>
 
         <div className="profile">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:
-            ANd9GcSbAIXfpo2d4j2ahyA4bY3-L1Ne2Apk4s9P1kfT3LTT-pqzFTVh-
-            GFhAwZfaj9bzKowD8Y&usqp=CAU"
-            alt="profile photo"
-          />
-          
-
+          <h5>Login</h5>
         </div>
+        
       </div>
     </nav>
   );

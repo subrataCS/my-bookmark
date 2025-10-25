@@ -33,19 +33,40 @@ mongodb();
 app.use('/api/auth', authRoutes);
 
 // Create data
-app.post('/api/input', async (req, res) => {
-  const data = req.body;
+// app.post('/api/input', async (req, res) => {
+//   const data = req.body;
 
+//   try {
+//     const input = new Input(data);
+//     await input.save();
+//     // console.log('data saved',input)
+//     res.status(201).json({ message: 'Input created successfully', success: true, data });
+//   } catch (err) {
+//     console.error('Error in creating input:', err);
+//     res.status(500).json({ message: 'Failed to create input', success: false, error: err.message });
+//   }
+// });
+
+// Create data
+app.post('/api/input', async (req, res) => {
   try {
-    const input = new Input(data);
-    await input.save();
-    // console.log('data saved',input)
-    res.status(201).json({ message: 'Input created successfully', success: true, data });
+    const input = new Input(req.body);
+    const savedInput = await input.save(); // wait for DB to generate _id
+    res.status(201).json({ 
+      message: 'Input created successfully', 
+      success: true, 
+      data: savedInput // <-- send the full saved object
+    });
   } catch (err) {
     console.error('Error in creating input:', err);
-    res.status(500).json({ message: 'Failed to create input', success: false, error: err.message });
+    res.status(500).json({ 
+      message: 'Failed to create input', 
+      success: false, 
+      error: err.message 
+    });
   }
 });
+
 
 // Fetch all inputs
 app.get('/api/inputs', async (req, res) => {
